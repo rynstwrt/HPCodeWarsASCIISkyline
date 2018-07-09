@@ -18,7 +18,7 @@ for building in buildings:
 	if totalW > maxW: maxW = totalW
 	if height > maxH: maxH = height
 
-pic = (" "*maxW + "\n")*maxH
+pic = (" " * maxW + "\n") * maxH
 
 def replaceAt(row, col, new):
 	global pic
@@ -51,4 +51,4 @@ for building in buildings:
 	xcoord, width, height = map(int, building.split(" "))
 	draw(xcoord - 1, width - 1, height - 1)
 
-print pic, "1234567890"*int(math.ceil(maxW / 10))
+print pic, "1234567890" * int(math.ceil(maxW / 10))
